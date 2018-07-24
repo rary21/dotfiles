@@ -1,2 +1,5 @@
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'w0rp/ale'
