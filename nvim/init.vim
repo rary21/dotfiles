@@ -28,6 +28,9 @@ noremap <space>/ *
 
 colorscheme desert
 
+// delete whitespace on save
+autocmd BufWritePre * :%s/\s\+$//ge
+
 " for ALE 
 let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 0
