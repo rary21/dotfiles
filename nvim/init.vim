@@ -4,7 +4,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set autoindent
-set smartindent
+set cindent
 set number
 set guifont=Ricty:h14
 set showtabline=2
