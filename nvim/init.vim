@@ -26,6 +26,13 @@ vnoremap > >gv
 noremap <space>h ^
 noremap <space>l $
 noremap <space>/ *
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
+set hlsearch
+set showmatch
 
 colorscheme desert
 
