@@ -1,0 +1,67 @@
+{    
+"vim.easymotion": true,
+"vim.sneak": true,
+"vim.incsearch": true,
+"vim.useSystemClipboard": true,
+"vim.useCtrlKeys": true,
+"vim.hlsearch": true,
+"vim.debug.loggingLevel": "debug",
+"vim.leader": "<space>",
+"vim.normalModeKeyBindings": [
+    {
+        "before": ["leader", "h"],
+        "after": ["^"]
+    },
+    {
+        "before": ["leader", "l"],
+        "after": ["$"]
+    },
+    {
+        "before": ["leader", "leader"],
+        "after": ["i", "<space>", "<Esc>"]
+    },
+    {
+        "before": ["leader", ";"],
+        "after": ["*", "<C-o>"]
+    },
+    {
+        "before": ["leader", "d"],
+        "commands": [
+            "editor.action.goToDeclaration"
+        ]
+    }
+],
+"vim.insertModeKeyBindings": [
+    {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+    },
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+    {
+        "before": ["leader", "h"],
+        "after": ["^"]
+    },
+    {
+        "before": ["leader", "l"],
+        "after": ["$"]
+    },
+    {
+        "before": [
+            ">"
+        ],
+        "commands": [
+            "editor.action.indentLines"
+        ]
+    },
+    {
+        "before": [
+            "<"
+        ],
+        "commands": [
+            "editor.action.outdentLines"
+        ]
+    },
+],
+"window.zoomLevel": 1
+}
