@@ -11,6 +11,8 @@ set showtabline=2
 set termguicolors
 set noswapfile
 
+inoremap jj <ESC>
+nnoremap x "_x
 nnoremap j gj
 nnoremap k gk
 nnoremap gj j
