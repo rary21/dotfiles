@@ -38,7 +38,7 @@ set showmatch
 
 colorscheme desert
 
-// delete whitespace on save
+" delete whitespace on save
 autocmd BufWritePre * :%s/\s\+$//ge
 
 " for ALE 
