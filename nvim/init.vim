@@ -10,6 +10,7 @@ set guifont=Ricty:h14
 set showtabline=2
 set termguicolors
 set noswapfile
+set bs=2
 
 inoremap jj <ESC>
 nnoremap x "_x
@@ -33,6 +34,9 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 set hlsearch
 set showmatch
+
+filetype plugin indent on
+syntax enable
 
 colorscheme desert
 
@@ -75,9 +79,6 @@ if dein#load_state(s:dein_dir)
   call dein#end()
   call dein#save_state()
 endif
-
-filetype plugin indent on
-syntax enable
 
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
