@@ -36,7 +36,7 @@ set hlsearch
 set showmatch
 
 filetype plugin indent on
-syntax enable
+set syntax=enable
 
 colorscheme desert
 
