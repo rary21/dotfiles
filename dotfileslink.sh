@@ -1,9 +1,9 @@
 #!/bin/sh
+mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # append git prompt settings to bashrc
-cd ~/.local
 GIT_VERSION=$(git --version | cut -d' ' -f3)
 if [ ! -f git-prompt.sh ]; then
     wget https://raw.githubusercontent.com/git/git/v$GIT_VERSION/contrib/completion/git-prompt.sh
