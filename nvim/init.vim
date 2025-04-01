@@ -31,6 +31,8 @@ noremap <space>l $
 noremap <space>/ *
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
+" ノーマルモードで IME OFF
+autocmd InsertLeave * :call system('fcitx5-remote -c')
 
 set hlsearch
 set showmatch
