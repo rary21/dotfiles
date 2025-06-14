@@ -2,8 +2,23 @@
 	"customInstructions": "~/.claude/CLAUDE.md",
 	"permissions": {
 		"allow": [
+			"Bash(ls:*)",
+			"Bash(cp:*)",
+			"Bash(find:*)",
+			"Bash(cat:*)",
+			"Bash(mkdir:*)",
+			"Bash(grep:*)",
+			"Bash(rg:*)",
+			"Bash(ss:*)",
 			"Bash(npm run lint)",
 			"Bash(npm run test:*)",
+            "Bash(npm install:*)",
+            "Bash(npm run build:*)",
+            "Bash(npm run dev:*)",
+            "Bash(npm test)",
+            "Bash(npx tsc:*)",
+            "Bash(npx next build:*)",
+            "Bash(npx eslint:*)",
 			"Read(~/.zshrc)"
 		],
 		"deny": [
