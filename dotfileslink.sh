@@ -1,4 +1,8 @@
 #!/bin/sh
+mkdir -p ~/.claude
+cp claude-settings.json ~/.claude/settings.json
+cp CLAUDE.md ~/.claude/
+
 mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
@@ -13,7 +17,6 @@ if [ ! -f git-completion.bash ]; then
 fi
 
 cat << 'EOF' >> ~/.bashrc
-
 # git
 if [ -f ~/.local/git-completion.bash ]; then
     source ~/.local/git-completion.bash
@@ -24,5 +27,9 @@ fi
 
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;34m\]\$\[\033[00m\] '
+EOF
+
+cat << 'EOF' >> ~/.bashrc
+alias vim='nvim'
 EOF
 

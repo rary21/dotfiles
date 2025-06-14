@@ -1,0 +1,16 @@
+{
+	"customInstructions": "~/.claude/CLAUDE.md",
+	"permissions": {
+		"allow": [
+			"Bash(npm run lint)",
+			"Bash(npm run test:*)",
+			"Read(~/.zshrc)"
+		],
+		"deny": [
+			"Bash(curl:*)"
+		]
+	},
+	"theme": "dark",
+	"preferredNotifChannel": "terminal_bell",
+	"editorMode": "vim"
+}
