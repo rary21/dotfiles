@@ -10,6 +10,7 @@
 			"Bash(grep:*)",
 			"Bash(rg:*)",
 			"Bash(ss:*)",
+			"Bash(git add)",
 			"Bash(npm run lint)",
 			"Bash(npm run test:*)",
             "Bash(npm run build:*)",
@@ -21,13 +22,27 @@
             "Bash(npx tsc:*)",
             "Bash(npx next build:*)",
             "Bash(npx eslint:*)",
-			"Read(~/.zshrc)"
+			"Read(~/.zshrc)",
 		],
 		"deny": [
 			"Bash(curl:*)"
 		]
 	},
+    "mcpServers": {
+      "puppeteer": {
+        "command": "npx",
+        "args": ["@modelcontextprotocol/server-puppeteer"]
+      }
+     },
+    "toolPermissions": {
+      "mcp__puppeteer": "session",
+      "mcp__puppeteer__puppeteer_navigate": "allow",
+      "mcp__puppeteer__puppeteer_screenshot": "allow",
+      "mcp__puppeteer__puppeteer_click": "session",
+      "mcp__puppeteer__puppeteer_type": "session",
+      "mcp__puppeteer__puppeteer_evaluate": "session"
+    },
 	"theme": "dark",
 	"preferredNotifChannel": "terminal_bell",
-	"editorMode": "vim"
+    "editorMode": "vim"
 }

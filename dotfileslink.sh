@@ -31,5 +31,6 @@ EOF
 
 cat << 'EOF' >> ~/.bashrc
 alias vim='nvim'
+alias ccm='npx ccmanager'
 EOF
 
