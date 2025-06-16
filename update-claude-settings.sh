@@ -2,5 +2,6 @@
 
 set -eu
 
-cp claude* ~/.claude/
-cp CLAUDE* ~/.claude/
+mkdir -p ~/.claude
+cp claude-settings.json ~/.claude/settings.json
+cp CLAUDE.md ~/.claude/
