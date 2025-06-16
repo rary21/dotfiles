@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {
+        "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": true }"
+      }
+    }
+    }
+  }
+}

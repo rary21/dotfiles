@@ -29,9 +29,12 @@
     "mcpServers": {
       "puppeteer": {
         "command": "npx",
-        "args": ["@modelcontextprotocol/server-puppeteer"]
+        "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+        "env": {
+          "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": true }"
+        }
       }
-     },
+    },
     "toolPermissions": {
       "mcp__puppeteer": "session",
       "mcp__puppeteer__puppeteer_navigate": "allow",
