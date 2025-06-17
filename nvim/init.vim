@@ -11,6 +11,7 @@ set showtabline=2
 set termguicolors
 set noswapfile
 set bs=2
+set ignorecase
 
 inoremap jj <ESC>
 nnoremap x "_x

@@ -1,7 +1,6 @@
 #!/bin/sh
 mkdir -p ~/.claude
-cp claude-settings.json ~/.claude/settings.json
-cp CLAUDE.md ~/.claude/
+source ./update-claude-settings.sh
 
 mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
