@@ -1,6 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
+set -eu
+
 mkdir -p ~/.claude
-source ./update-claude-settings.sh
+pushd claude
+./update-claude-settings.sh
+popd
 
 mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
