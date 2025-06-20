@@ -1,0 +1,14 @@
+[Unit]
+Description=Notify Send Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/rary/dotfiles/claude/notify-send-server.sh
+Restart=always
+RestartSec=5
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/rary/.Xauthority"
+
+[Install]
+WantedBy=default.target
