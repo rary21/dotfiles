@@ -10,7 +10,8 @@
 			"Bash(grep:*)",
 			"Bash(rg:*)",
 			"Bash(ss:*)",
-			"Bash(git add)",
+			"Bash(git show:*)",
+			"Bash(git ls-tree:*)",
 			"Bash(npm run:*)",
             "Bash(npm install:*)",
             "Bash(npm test)",
@@ -19,11 +20,13 @@
             "Bash(npx tsc:*)",
             "Bash(npx next build:*)",
             "Bash(npx eslint:*)",
-            "Bash(git add:*)",
+            "Bash(nc -q 0 localhost 45678)",
 			"Read(~/.zshrc)"
 		],
 		"deny": [
-			"Bash(curl:*)"
+            "Bash(git add:*)",
+            "Bash(git commit:*)",
+            "Bash(git rm:*)"
 		]
 	},
     "mcpServers": {
