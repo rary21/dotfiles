@@ -1,5 +1,4 @@
 {
-	"customInstructions": "~/.claude/CLAUDE.md",
 	"permissions": {
 		"allow": [
 			"Bash(ls:*)",
@@ -12,6 +11,7 @@
 			"Bash(ss:*)",
 			"Bash(git show:*)",
 			"Bash(git ls-tree:*)",
+			"Bash(git diff:*)",
 			"Bash(npm run:*)",
             "Bash(npm install:*)",
             "Bash(npm test)",
@@ -28,25 +28,5 @@
             "Bash(git commit:*)",
             "Bash(git rm:*)"
 		]
-	},
-    "mcpServers": {
-      "puppeteer": {
-        "command": "npx",
-        "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
-        "env": {
-          "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": true }"
-        }
-      }
-    },
-    "toolPermissions": {
-      "mcp__puppeteer": "session",
-      "mcp__puppeteer__puppeteer_navigate": "allow",
-      "mcp__puppeteer__puppeteer_screenshot": "allow",
-      "mcp__puppeteer__puppeteer_click": "session",
-      "mcp__puppeteer__puppeteer_type": "session",
-      "mcp__puppeteer__puppeteer_evaluate": "session"
-    },
-	"theme": "dark",
-	"preferredNotifChannel": "terminal_bell",
-    "editorMode": "vim"
+	}
 }
