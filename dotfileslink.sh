@@ -9,6 +9,7 @@ popd
 mkdir -p ~/.config/nvim
 ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
 # append git prompt settings to bashrc
 GIT_VERSION=$(git --version | cut -d' ' -f3)

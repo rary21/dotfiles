@@ -1,0 +1,9 @@
+[user]
+    email = s1413091@gmail.com
+    name = Yusuke Omae
+[core]
+    editor = vim
+[alias]
+    delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|dev|master|main'|xargs git branch -d; };f"
+[pull]
+	rebase = false
