@@ -7,3 +7,6 @@
     delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|dev|master|main'|xargs git branch -d; };f"
 [pull]
 	rebase = false
+[init]
+defaultBranch = main
+
