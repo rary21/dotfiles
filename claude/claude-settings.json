@@ -22,11 +22,6 @@
             "Bash(npx eslint:*)",
             "Bash(nc -q 0 localhost 45678)",
 			"Read(~/.zshrc)"
-		],
-		"deny": [
-            "Bash(git add:*)",
-            "Bash(git commit:*)",
-            "Bash(git rm:*)"
 		]
 	}
 }
